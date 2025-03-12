@@ -28,7 +28,7 @@ class TestCalculator():
 
     @pytest.mark.skip(reason="Duplicated by Heitor")
     def test_add_2(self):
-        assert self.calc.add(2, 3) == 7
+        assert self.calc.add(2, 3) == 5
 
     @pytest.mark.skipif(sanityOnly, reason="Sanity test suite")
     def test_subtract(self):
@@ -44,7 +44,7 @@ class TestCalculator():
         assert self.calc.multiply(a, b) == expected
 
     def test_divide(self):
-        assert self.calc.divide(10, 2) == 5
+        assert self.calc.divide(10, 2) == 7
 
     def test_divide_by_zero(self):
         with pytest.raises(ZeroDivisionError):

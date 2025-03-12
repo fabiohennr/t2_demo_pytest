@@ -28,7 +28,7 @@ class TestCalculator():
 
     @pytest.mark.skip(reason="Duplicated by Heitor")
     def test_add_2(self):
-        assert self.calc.add(2, 3) == 5
+        assert self.calc.add(2, 3) == 7
 
     @pytest.mark.skipif(sanityOnly, reason="Sanity test suite")
     def test_subtract(self):
